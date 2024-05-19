@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Cutive&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@500&family=Roboto+Slab:wght@100..900&family=Tilt+Neon&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+.headContainer {
+  display: flex;
+  width: 100%;
+  min-height: 120px;
+  background-color: #f4f4f4;
+  border-radius: 0 0 30px 30px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+
+.headContainer .logo {
+  width: 350px;
+  min-height: 100%;
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headContainer .logo img {
+  width: 90%;
+}
+
+.main {
+  width: 100%;
+  min-height: 82.75vh;
+  display: flex;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to right,
+    rgb(162, 159, 159) 0%,
+    #b2a0a8 51%,
+    #d7e3f2 100%
+  );
+}
+.main .one,
+.main .two {
+  width: 50%;
+  min-height: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.main .one {
+  /* background-color: aqua; */
+}
+.main .one .img img {
+  border-radius: 10px;
+  filter: drop-shadow(0px 16px 10px rgba(11, 11, 14, 0.6));
+}
+.main .two .img img {
+  object-fit: cover;
+  width: 100%;
+  height: 334px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 16px 10px rgba(11, 11, 14, 0.6));
+}
+
+.main .one .txt,
+.main .two .txt {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.main .one .txt .btn1 a,
+.main .two .txt .btn2 a {
+  text-decoration: none;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  position: relative;
+  color: rgb(46, 54, 53);
+  background-image: linear-gradient(
+    to right,
+    rgb(162, 159, 159) 0%,
+    #b2a0a8 51%,
+    #d7e3f2 100%
+  );
+  background-size: 200% auto;
+  transition: transform 0.3s ease, scale 0.3s ease;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.main .one .txt .btn1 a:hover,
+.main .two .txt .btn2 a:hover {
+  transform: translateY(-5px) scale(1.1);
+  color: black;
+  cursor: pointer;
+  background-position: right center;
+}
+
+@media screen and (max-width: 750px) {
+  .main {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main .one,
+  .main .two {
+    width: 100%;
+    gap: 20px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .main .two .img img {
+    object-fit: cover;
+    width: 330px;
+    height: 100%;
+  }
+}
+
+
+.footerContainer {
+  width: 100%;
+  min-height: 450px;
+  background-color: #363535;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot1{
+  width: 100%;
+  min-height: 100px;
+  /* background-color: beige; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-weight: 500;
+  border: 0.5px solid whitesmoke;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 10px ;
+}
+.foot1 img{
+  height: 80px;
+}
+.foot1 .subfoot1{
+  color: #f2f2f2;
+  font-family: "Sedan SC", serif;
+  font-size: 25px;
+}
+.foot2{
+  width: 100%;
+  min-height: 200px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.foot2 .cn1,
+.foot2 .cn2{
+  width: 50%; 
+  min-height: 200px;
+  /* background-color: aqua; */
+
+}
+.foot2 .cn1{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  gap: 15px;
+  color: whitesmoke;
+}
+.foot2 .cn2{
+  width: 30%;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  gap: 15px;
+  color: whitesmoke;
+}
+.foot2 .cn1 .name
+.foot2 .cn2 .name{
+  font-family: "Roboto Slab", sans-serif;
+  color: whitesmoke;
+}
+
+.foot2 .cn2 .name a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.foot2 .cn1 .name span{
+  font-size: 15px;
+  font-family: "Roboto Slab", sans-serif;
+
+}
+
+.foot3{
+  width: 100%;
+  min-height: 50px;
+  font-size: 14px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b2a0a8;
+  box-sizing: border-box;
+  padding: 0 20px;
+  
+}
+
+.foot4{
+  width: 100%;
+  height: 100px;
+  /* background-color: #d7e3f2; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.foot4 .f4one a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.foot4 .f4two{
+  color: #f2f2f2;
+}
